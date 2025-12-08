@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #f1f1f1;
+    background-color: var(--text-light);
     
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
