@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique dentaire MADDI AICHA YASMINE</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="tooth-icon">🦷</span> Clinique dantaire MADDI AICHA YASMINE
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">NOS CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="team-photo-placeholder">
+                <img src="yasmine.jpg" alt="Our Professional Dental Team">
+            </div>
+            
+            <div class="cta-box">
+                
+                <h1>VOTRE CONFORT. VOTRE SOURIRE. VOS EXPERTS DENTAIRES DE PROXIMITÉ</h1>
+                <h3> ✆ 0791-41-41-59</h3>
+                <a href="#booking" class="btn-primary">Prendre Rendez-vous en ligne</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="trust-section">
+        <h2>NOS SERVICES</h2>
+        <div class="services-wrapper container">
+            <button class="scroll-btn left" aria-label="Scroll left" data-direction="left">‹</button>
+            <div class="services-scroll" id="servicesScroll" tabindex="0" role="list">
+            <article class="service-card">
+                <div class="thumb"><img src="images/consultation.jpg" alt="Consultation"></div>
+                <h3>Consultation</h3>
+                <p class="muted">GRATUIT</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/extration.jpg" alt="Extraction"></div>
+                <h3>Extraction</h3>
+                <p class="muted">A partir de 1000 DA</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/prothese.jpg" alt="Prothèse"></div>
+                <h3>Prothèse dentaire</h3>
+                <p class="muted">A partir de 2000 DA</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/Orthodontie.jpg" alt="Orthodontie"></div>
+                <h3>Orthodontie</h3>
+                <p class="muted">Amovible & fixe</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/Détartrage.jpg" alt="Détartrage"></div>
+                <h3>Détartrage</h3>
+                <p class="muted">Soins préventifs</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/parodontale.jpg" alt="Parodontale"></div>
+                <h3>Chirurgie parodontale</h3>
+                <p class="muted">Traitements spécialisés</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/urgence.jpg" alt="Urgence"></div>
+                <h3>Traitement d'urgence</h3>
+                <p class="muted">Prise en charge rapide</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/esthetique.jpg" alt="Soins esthétiques"></div>
+                <h3>Soins esthétiques</h3>
+                <p class="muted">Blanchiment, facettes</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/Endodontie.jpg" alt="Endodontie"></div>
+                <h3>Endodontie</h3>
+                <p class="muted">Traitement de canal</p>
+            </article>
+
+            <article class="service-card">
+                <div class="thumb"><img src="images/eclaircissement.jpg" alt="Éclaircissement"></div>
+                <h3>Éclaircissement dentaire</h3>
+                <p class="muted">Sourire plus blanc</p>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="images/sagesse.png" alt="Éclaircissement"></div>
+                <h3>Chirurgie de la dent de sagesse</h3>
+                <p class="muted"></p>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="images/panoramique.jpg" alt="Éclaircissement"></div>
+                <h3>Radiographie panoramique</h3>
+                <p class="muted">...</p>
+            </article>
+            </div>
+            <button class="scroll-btn right" aria-label="Scroll right" data-direction="right">›</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-form">
+                <h2>Contactez-nous</h2>
+                <p class="muted">Appelez: <strong>0791-41-41-59</strong> ou envoyez-nous un message ci-dessous.</p>
+
+                <form id="contactForm" action="#" method="post" novalidate>
+                    <label class="form-row">Nom
+                        <input type="text" name="name" required>
+                    </label>
+
+                    <label class="form-row">Email
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label class="form-row">Téléphone
+                        <input type="tel" name="phone">
+                    </label>
+
+                    <label class="form-row">Message
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+
+            <div class="contact-location">
+                <h2>Notre emplacement</h2>
+                <div class="map-wrap">
+                    <iframe src="https://www.google.com/maps?q=R5M6%2BWWX%20Mesra%20Algeria&output=embed" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="details">
+                    <p><strong>Adresse:</strong> مركز التشخيص الطبي العكرمي، ماسرة، مستغانم</p>
+                    <p><strong>Horaires:</strong> Tous les hours  9:00 – 17:00</p>
+                    <p><strong>Téléphone:</strong> 0791-41-41-59</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+
+    
+    </body>
+</html>
