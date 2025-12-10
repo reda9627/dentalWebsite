@@ -142,3 +142,66 @@
     sections.forEach(s=> io.observe(s));
   }
 })();
+
+(function(){
+  // Service card modal functionality
+  const modal = document.getElementById('serviceModal');
+  const modalClose = document.querySelector('.modal-close');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+  if(!modal || !serviceCards.length) {
+    console.warn('Modal or service cards not found');
+    return;
+  }
+
+  // Open modal on card click
+  serviceCards.forEach((card, index) => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const title = card.querySelector('h3').textContent;
+      const description = card.getAttribute('data-description') || 'Découvrez nos services professionnels.';
+      
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      modal.classList.add('open');
+      console.log('Modal opened for:', title);
+    });
+  });
+
+  // Close modal
+  const closeModal = () => {
+    modal.classList.remove('open');
+  };
+
+  if(modalClose) {
+    modalClose.addEventListener('click', closeModal);
+  }
+
+  // Close on overlay click
+  modal.addEventListener('click', (e) => {
+    if(e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && modal.classList.contains('open')) {
+      closeModal();
+    }
+  });
+})();
+
+document.addEventListener('DOMContentLoaded', function(){
+        const booking = document.getElementById('bookingBtn');
+        if (booking) {
+            booking.addEventListener('click', function(e){
+                e.preventDefault();
+                alert("Ce service n'est pas disponible pour le moment .\n Veuillez contacter la clinique directement pour prendre rendez-vous.\n هذه الخدمة غير متوفرة حالياً. يرجى الاتصال بالعيادة مباشرةً لتحديد موعد.");
+            });
+        }
+    });
+
